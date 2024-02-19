@@ -129,7 +129,7 @@ void algorithm()
         break;
     }
 
-     // Debugging statements
+    // Debugging statements
     cout << "Head position: (" << x << ", " << y << ")" << endl;
     for (int i = 0; i < nTail; i++)
         cout << "Tail segment " << i << " position: (" << tailX[i] << ", " << tailY[i] << ")" << endl;
@@ -149,7 +149,7 @@ void algorithm()
         if (tailX[i] == x && tailY[i] == y)
             gameover = true; // Collision with tail, set game over flag
 
-    // Update the positions of the tail segments based on the previous positions of the head
+    // Update the positions of the tail segments based on the previous positions
     int prev2X, prev2Y;
     tailX[0] = prevX;
     tailY[0] = prevY; // Update first tail segment to previous head position
@@ -173,6 +173,7 @@ void algorithm()
         nTail++;
     }
 }
+
 
 int main()
 {
